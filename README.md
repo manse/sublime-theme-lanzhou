@@ -42,7 +42,7 @@ You can choose whichever flavor you like, but don't forget to change *both* colo
 
 ***Note: Don't forget to restart Sublime Text after activating the theme.***
 
-#### Settings for Spacegray
+#### Settings
 
 ```json
     {
