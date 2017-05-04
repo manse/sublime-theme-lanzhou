@@ -43,7 +43,7 @@
         "tab_overlap": 5,
         "tab_width": 180,
         "tab_min_width": 45,
-        "tab_height": 28,
+        "tab_height": 34,
         "mouse_wheel_switch": false
     },
     {
@@ -62,7 +62,7 @@
         "content_margin": [12, 0, 12, 0],
         "max_margin_trim": 0,
         "hit_test_level": 0.0,
-        "layer0.texture": "Theme - Lanzhou/Assets/tab-inactive.png",
+        "layer0.texture": "Theme - Lanzhou/Assets/tabset-background.png",
         "layer0.inner_margin": [5, 5],
         "layer0.opacity": 1.0
     },
@@ -76,7 +76,7 @@
     {
         "class": "tab_control",
         "attributes": ["hover"],
-        "layer0.texture": "Theme - Lanzhou/Assets/tab-hover.png"
+        "layer0.texture": "Theme - Lanzhou/Assets/tabset-background.png"
     },
     // Tab active state
     {
@@ -130,7 +130,7 @@
     {
         "class": "tab_label",
         "fade": true,
-        "fg": [80, 80, 80],
+        "fg": [160, 160, 160],
         "shadow_color": [255, 255, 255],
         "shadow_offset": [0, 0],
         "font.size": 11,
@@ -139,12 +139,13 @@
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["hover"]}],
-        "fg": [40, 40, 40]
+        "fg": [200, 200, 200]
     },
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-        "fg": [0, 0, 0]
+        "font.bold": true,
+        "fg": [255, 255, 255]
     },
     {
         "class": "tab_label",
@@ -490,7 +491,7 @@
     // Sidebar rows
     {
         "class": "tree_row",
-        "layer0.texture": "Theme - Lanzhou/Assets/sidebar-bg.png",
+        "layer0.texture": "Theme - Lanzhou/Assets/sidebar-row-selected.png",
         "layer0.opacity": 0.0,
         "layer0.inner_margin": [1, 1]
     },
