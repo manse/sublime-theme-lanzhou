@@ -2,11 +2,11 @@
 //
 // FONTS
 //
-    // { "class": "tab_label",              "font.face": ".SFNSText-Regular", "settings": [ "!el_capitan_font_default" ] },
-    // { "class": "label_control",          "font.face": ".SFNSText-Regular", "settings": [ "!el_capitan_font_default" ] },
-    // { "class": "tool_tip_label_control", "font.face": ".SFNSText-Regular", "settings": [ "!el_capitan_font_default" ] },
-    // { "class": "sidebar_heading",        "font.face": ".SFNSText-Regular", "settings": [ "!el_capitan_font_default" ] },
-    // { "class": "sidebar_label",          "font.face": ".SFNSText-Regular", "settings": [ "!el_capitan_font_default" ] },
+    { "class": "tab_label",              "font.face": ".SFNSText-Regular", "settings": [ "!el_capitan_font_default" ] },
+    { "class": "label_control",          "font.face": ".SFNSText-Regular", "settings": [ "!el_capitan_font_default" ] },
+    { "class": "tool_tip_label_control", "font.face": ".SFNSText-Regular", "settings": [ "!el_capitan_font_default" ] },
+    { "class": "sidebar_heading",        "font.face": ".SFNSText-Regular", "settings": [ "!el_capitan_font_default" ] },
+    { "class": "sidebar_label",          "font.face": ".SFNSText-Regular", "settings": [ "!el_capitan_font_default" ] },
 
     // // Settings
     // { "class": "tab_label",              "font.face": "Helvetica",         "settings": [ "el_capitan_font_helvetica"      ] },
@@ -490,7 +490,7 @@
     // Sidebar rows
     {
         "class": "tree_row",
-        "layer0.texture": "Theme - Lanzhou/Assets/sidebar-row-selected.png",
+        "layer0.texture": "Theme - Lanzhou/Assets/sidebar-bg.png",
         "layer0.opacity": 0.0,
         "layer0.inner_margin": [1, 1]
     },
@@ -505,29 +505,34 @@
         "class": "sidebar_heading",
         "color": [128, 128, 128],
         "font.bold": true,
-        "shadow_color": [255, 255, 255],
+        "shadow_color": [0, 0, 0],
         "shadow_offset": [0, 0]
     },
     // Sidebar heading selected
     {
         "class": "sidebar_heading",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "color": [255, 255, 255]
+        "color": [0, 0, 0]
     },
     // Sidebar entry
     {
         "class": "sidebar_label",
-        "color": [0, 0, 0],
-        "shadow_color": [255, 255, 255],
+        "color": [160, 160, 160],
+        "shadow_color": [0, 0, 0],
         "shadow_offset": [0, 0],
         "font.bold": false,
         "font.italic": false
+    },
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "color": [220, 220, 220]
     },
     // Sidebar folder entry
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
-        "color": [ 60, 60, 60 ],
+        "color": [ 190, 190, 190 ],
     },
     {
         "class": "sidebar_label",
@@ -538,18 +543,19 @@
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
         "settings": ["bold_folder_labels"],
-        "color": [60, 60, 60],
+        "color": [190, 190, 190],
         "font.bold": true
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
         "settings": ["bold_folder_labels"],
-        "color": [110, 126, 141],
+        "color": [220, 220, 220],
     },
     // Sidebar entry selected
     {
         "class": "sidebar_label",
+        "font.bold": true,
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
         "color": [255, 255, 255]
     },
@@ -569,7 +575,7 @@
         "class": "close_button",
         "layer0.texture": "Theme - Lanzhou/Assets/file-close.png",
         "layer0.inner_margin": 0,
-        "layer0.tint": [ 0, 0, 0 ],
+        "layer0.tint": [ 255, 255, 255 ],
         "layer0.opacity": 0.0,
         "content_margin": [8, 8]
     },
@@ -590,7 +596,7 @@
         "attributes": ["dirty"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
         "layer0.texture": "Theme - Lanzhou/Assets/file-dirty.png",
-        "layer0.tint": [ 255, 255, 255 ],
+        "layer0.tint": [ 0, 0, 0 ],
         "layer0.opacity": 1.0
     },
     {
@@ -604,13 +610,13 @@
         "class": "close_button",
         "attributes": ["hover"],
         "layer0.texture": "Theme - Lanzhou/Assets/file-close-hover.png",
-        "layer0.tint": [ 0, 0, 0 ],
+        "layer0.tint": [ 255, 255, 255 ],
         "layer0.opacity": 0.85
     },
     {
         "class": "close_button",
         "parents": [{"class": "tree_row", "attributes": ["hover", "selected"]}],
-        "layer0.tint": [ 255, 255, 255 ],
+        "layer0.tint": [ 0, 0, 0 ],
         "layer0.opacity": 1.0
     },
 
@@ -624,7 +630,7 @@
         "content_margin": [8, 8],
         "layer0.texture": "Theme - Lanzhou/Assets/group-closed.png",
         "layer0.opacity": 0.42,
-        "layer0.tint": [ 0, 0, 0 ],
+        "layer0.tint": [ 255, 255, 255 ],
         "layer0.inner_margin": 0
     },
     {
@@ -635,7 +641,7 @@
     {
         "class": "disclosure_button_control",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.tint": [ 255, 255, 255 ],
+        "layer0.tint": [ 0, 0, 0 ],
         "layer0.opacity": 1.0
     },
     // Sidebar group open
@@ -820,7 +826,7 @@
         "fg": [50, 50, 50, 255],
         "match_fg": [0, 0, 0, 255],
         "selected_fg": [25, 25, 25, 255],
-        "selected_match_fg": [0, 0, 0, 255]        
+        "selected_match_fg": [0, 0, 0, 255]
     },
     {
         "class": "quick_panel_path_label",
@@ -831,14 +837,14 @@
         "fg": [150, 150, 150, 255],
         "match_fg": [90, 90, 90, 255],
         "selected_fg": [120, 120, 120, 255],
-        "selected_match_fg": [90, 90, 90, 255]        
+        "selected_match_fg": [90, 90, 90, 255]
     },
     {
         "class": "quick_panel_score_label",
         // "fg": [160, 160, 160, 255],
         // "selected_fg": [120, 120, 120, 255]
         "fg": [72, 139, 211, 255],
-        "selected_fg": [72, 139, 211, 255]        
+        "selected_fg": [72, 139, 211, 255]
     },
 
 //
