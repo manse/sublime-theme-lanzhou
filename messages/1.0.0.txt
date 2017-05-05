@@ -1,4 +1,4 @@
-# New in Lanzhou 1.0
+# New in Manzhou 1.0
 
 * A lot of minor visual and behavioral fixes
 
@@ -11,8 +11,8 @@
 *Example settings*
 
     {
-      "theme": "Lanzhou.sublime-theme"
-      "color_scheme": "Packages/Theme - Lanzhou/base16-ocean.dark.tmTheme"
+      "theme": "Manzhou.sublime-theme"
+      "color_scheme": "Packages/Theme - Manzhou/base16-ocean.dark.tmTheme"
     }
 
 

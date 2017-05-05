@@ -1,4 +1,4 @@
-Thanks for installing Theme Lanzhou!
+Thanks for installing Theme Manzhou!
 
 
 How to activate
@@ -9,14 +9,14 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 *Note: Don't forget to restart Sublime Text after activating the theme.*
 
 
-Lanzhou
+Manzhou
 ---------
 
 *Example settings*
 
     {
-      "theme": "Lanzhou.sublime-theme"
-      "color_scheme": "Packages/Theme - Lanzhou/base16-ocean.dark.tmTheme"
+      "theme": "Manzhou.sublime-theme"
+      "color_scheme": "Packages/Theme - Manzhou/base16-ocean.dark.tmTheme"
     }
 
 
