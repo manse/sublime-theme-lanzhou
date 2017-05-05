@@ -130,7 +130,7 @@
     {
         "class": "tab_label",
         "fade": true,
-        "fg": [160, 160, 160],
+        "fg": [125, 139, 155],
         "shadow_color": [255, 255, 255],
         "shadow_offset": [0, 0],
         "font.size": 11,
@@ -139,7 +139,7 @@
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["hover"]}],
-        "fg": [200, 200, 200]
+        "fg": [195, 203, 213]
     },
     {
         "class": "tab_label",
@@ -483,7 +483,7 @@
     // Sidebar tree
     {
         "class": "sidebar_tree",
-        "row_padding": [8, 5],
+        "row_padding": [8, 4],
         "indent": 15,
         "indent_offset": 15,
         "indent_top_level": false
@@ -504,7 +504,7 @@
     // Sidebar heading
     {
         "class": "sidebar_heading",
-        "color": [128, 128, 128],
+        "color": [111, 126, 144],
         "font.bold": true,
         "shadow_color": [0, 0, 0],
         "shadow_offset": [0, 0]
@@ -518,7 +518,7 @@
     // Sidebar entry
     {
         "class": "sidebar_label",
-        "color": [160, 160, 160],
+        "color": [125, 139, 155],
         "shadow_color": [0, 0, 0],
         "shadow_offset": [0, 0],
         "font.bold": false,
@@ -527,13 +527,13 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "color": [220, 220, 220]
+        "color": [195, 203, 213]
     },
     // Sidebar folder entry
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
-        "color": [ 190, 190, 190 ],
+        "color": [ 165, 178, 192 ],
     },
     {
         "class": "sidebar_label",
@@ -544,14 +544,14 @@
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
         "settings": ["bold_folder_labels"],
-        "color": [190, 190, 190],
+        "color": [165, 178, 192],
         "font.bold": true
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
         "settings": ["bold_folder_labels"],
-        "color": [220, 220, 220],
+        "color": [225, 229, 234],
     },
     // Sidebar entry selected
     {
