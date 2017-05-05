@@ -6,7 +6,7 @@ A set of custom UI themes for Sublime Text 3. It's all about hype and minimal. C
 
 ### Themes
 
-![SS](https://cloud.githubusercontent.com/assets/443965/25740968/be8513c0-31c3-11e7-954c-503b3e2efcc3.png)
+![SS](https://cloud.githubusercontent.com/assets/443965/25741062/112588c6-31c4-11e7-953a-1f572234381a.png)
 
 Default flavor based on One Dark Material color scheme.
 
