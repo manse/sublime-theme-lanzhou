@@ -6,7 +6,7 @@ A set of custom UI themes for Sublime Text 3. It's all about hype and minimal. C
 
 ### Themes
 
-![SS](https://cloud.githubusercontent.com/assets/443965/25741062/112588c6-31c4-11e7-953a-1f572234381a.png)
+![SS](https://cloud.githubusercontent.com/assets/443965/25741281/f38bc072-31c4-11e7-940d-8adfefae0493.png)
 
 Default flavor based on One Dark Material color scheme.
 
@@ -16,7 +16,7 @@ Default flavor based on One Dark Material color scheme.
 
 You can install the theme manually:
 
-1. [Download the .zip](https://github.com/kliu/sublime-theme-lanzhou/archive/master.zip)
+1. [Download the .zip](https://github.com/manse/sublime-theme-manzhou/archive/master.zip)
 2. Unzip and rename the folder to `Theme - Manzhou`
 3. Copy the folder into `Packages` directory, which you can find using the menu item `Sublime Text -> Preferences -> Browse Packages...`
 
