@@ -506,7 +506,7 @@
     // Sidebar tree
     {
         "class": "sidebar_tree",
-        "row_padding": [8, 4],
+        "row_padding": [8, 5],
         "indent": 15,
         "indent_offset": 15,
         "indent_top_level": false
