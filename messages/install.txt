@@ -15,8 +15,8 @@ Manzhou
 *Example settings*
 
     {
-      "theme": "Manzhou.sublime-theme"
-      "color_scheme": "Packages/Theme - Manzhou/OneDark.tmTheme",
+        "theme": "Manzhou.sublime-theme",
+        "color_scheme": "Packages/sublime-theme-manzhou/OneDark.tmTheme",
     }
 
 
