@@ -17,7 +17,7 @@ Default flavor based on One Dark Material color scheme.
 You can install the theme manually:
 
 1. [Download the .zip](https://github.com/manse/sublime-theme-manzhou/archive/master.zip)
-2. Unzip and rename the folder to `sublime-theme-manzhou`
+2. Unzip and rename the folder to `Theme - Manzhou`
 3. Copy the folder into `Packages` directory, which you can find using the menu item `Sublime Text -> Preferences -> Browse Packages...`
 
 ***
@@ -35,6 +35,6 @@ You can choose whichever flavor you like, but don't forget to change *both* colo
 ```json
     {
       "theme": "Manzhou.sublime-theme",
-      "color_scheme": "Packages/sublime-theme-manzhou/OneDark.tmTheme",
+      "color_scheme": "Packages/Theme - Manzhou/OneDark.tmTheme",
     }
 ```
