@@ -2,11 +2,12 @@
 //
 // FONTS
 //
-    { "class": "tab_label",              "font.face": ".SFNSText-Regular", "settings": [ "!el_capitan_font_default" ] },
-    { "class": "label_control",          "font.face": ".SFNSText-Regular", "settings": [ "!el_capitan_font_default" ] },
-    { "class": "tool_tip_label_control", "font.face": ".SFNSText-Regular", "settings": [ "!el_capitan_font_default" ] },
-    { "class": "sidebar_heading",        "font.face": ".SFNSText-Regular", "settings": [ "!el_capitan_font_default" ] },
-    { "class": "sidebar_label",          "font.face": ".SFNSText-Regular", "settings": [ "!el_capitan_font_default" ] },
+    { "class": "tab_label",              "font.face": ".SFNSText-Regular", "settings": [ "!el_capitan_font_default" ], "font.size": 12 },
+    { "class": "label_control",          "font.face": ".SFNSText-Regular", "settings": [ "!el_capitan_font_default" ], "font.size": 12, "color": [195, 203, 213] },
+    { "class": "title_label_control",    "font.face": ".SFNSText-Regular", "settings": [ "!el_capitan_font_default" ], "font.size": 12, "color": [195, 203, 213] },
+    { "class": "tool_tip_label_control", "font.face": ".SFNSText-Regular", "settings": [ "!el_capitan_font_default" ], "font.size": 12 },
+    { "class": "sidebar_heading",        "font.face": ".SFNSText-Regular", "settings": [ "!el_capitan_font_default" ], "font.size": 12 },
+    { "class": "sidebar_label",          "font.face": ".SFNSText-Regular", "settings": [ "!el_capitan_font_default" ], "font.size": 12 },
 
     // // Settings
     // { "class": "tab_label",              "font.face": "Helvetica",         "settings": [ "el_capitan_font_helvetica"      ] },
@@ -133,7 +134,6 @@
         "fg": [125, 139, 155],
         "shadow_color": [255, 255, 255],
         "shadow_offset": [0, 0],
-        "font.size": 11,
         "font.bold": false,
         "font.italic": false
     },
@@ -422,11 +422,6 @@
 // LABELS
 //
 
-    // General labels
-    {
-        "class": "label_control",
-        "color": [0, 0, 0],
-    },
     // Text field labels
     {
         "class": "label_control",
@@ -481,7 +476,7 @@
     {
         "class": "label_control",
         "parents": [{"class": "status_bar"}],
-        "color": [80, 80, 80],
+        "color": [195, 203, 213],
         "shadow_color": [255, 255, 255],
         "shadow_offset": [0, 0]
     },
@@ -506,7 +501,7 @@
     // Sidebar tree
     {
         "class": "sidebar_tree",
-        "row_padding": [8, 5],
+        "row_padding": [16, 5],
         "indent": 15,
         "indent_offset": 15,
         "indent_top_level": false
@@ -772,7 +767,8 @@
         "layer0.texture": "Theme - Manzhou/Assets/text-field.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [8, 8, 8, 8],
-        "content_margin": [3, 3, 6, 3]
+        "content_margin": [3, 3, 6, 3],
+        "color_scheme_tint": [45, 49, 58]
     },
 
     // Text input dropdown
@@ -807,7 +803,7 @@
         "layer0.texture": "Theme - Manzhou/Assets/quick-panel-background.png",
         "layer0.inner_margin": [10, 16, 10, 10],
         "layer0.opacity": 1.0,
-        "content_margin": [4, 16, 4, 10 ]
+        "content_margin": [4, 20, 4, 14 ],
     },
 
 //
@@ -847,10 +843,11 @@
         // "match_fg": [0, 0, 0 ],
         // "selected_fg": [40, 40, 40 ],
         // "selected_match_fg": [0, 0, 0 ]
-        "fg": [50, 50, 50, 255],
-        "match_fg": [0, 0, 0, 255],
-        "selected_fg": [25, 25, 25, 255],
-        "selected_match_fg": [0, 0, 0, 255]
+        "fg": [125, 139, 155, 255],
+        "match_fg": [150, 167, 186, 255],
+        "selected_fg": [255, 255, 255, 255],
+        "selected_match_fg": [255, 255, 255, 255],
+
     },
     {
         "class": "quick_panel_path_label",
@@ -858,10 +855,10 @@
         // "match_fg": [0, 0, 0, 255],
         // "selected_fg": [40, 40, 40 ],
         // "selected_match_fg": [0, 0, 0 ]
-        "fg": [150, 150, 150, 255],
-        "match_fg": [90, 90, 90, 255],
-        "selected_fg": [120, 120, 120, 255],
-        "selected_match_fg": [90, 90, 90, 255]
+        "fg": [96, 107, 119, 255],
+        "match_fg": [125, 139, 155, 255],
+        "selected_fg": [255, 255, 255, 255],
+        "selected_match_fg": [255, 255, 255, 255]
     },
     {
         "class": "quick_panel_score_label",
@@ -1003,39 +1000,39 @@
         "class": "icon_regex",
         "layer0.texture": "Theme - Manzhou/Assets/icon-regex.png",
         "layer0.opacity": 1.0,
-        "layer0.tint": [0, 0, 0],
+        "layer0.tint": [90, 90, 90],
         "content_margin": [9, 9]
     },
     {
         "class": "icon_regex",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.tint": [34, 130, 246]
+        "layer0.tint": [255, 255, 255]
     },
     // Case sensitive search button
     {
         "class": "icon_case",
         "layer0.texture": "Theme - Manzhou/Assets/icon-case.png",
         "layer0.opacity": 1.0,
-        "layer0.tint": [0, 0, 0],
+        "layer0.tint": [90, 90, 90],
         "content_margin": [9, 9]
     },
     {
         "class": "icon_case",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.tint": [34, 130, 246]
+        "layer0.tint": [255, 255, 255]
     },
     // Match whole word search button
     {
         "class": "icon_whole_word",
         "layer0.texture": "Theme - Manzhou/Assets/icon-word.png",
         "layer0.opacity": 1.0,
-        "layer0.tint": [0, 0, 0],
+        "layer0.tint": [90, 90, 90],
         "content_margin": [9, 9]
     },
     {
         "class": "icon_whole_word",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.tint": [34, 130, 246]
+        "layer0.tint": [255, 255, 255]
     },
 
 //
@@ -1047,52 +1044,52 @@
         "class": "icon_context",
         "layer0.texture": "Theme - Manzhou/Assets/icon-context.png",
         "layer0.opacity": 1.0,
-        "layer0.tint": [0, 0, 0],
+        "layer0.tint": [90, 90, 90],
         "content_margin": [9, 9]
     },
     {
         "class": "icon_context",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.tint": [34, 130, 246]
+        "layer0.tint": [255, 255, 255]
     },
     // Use search buffer
     {
         "class": "icon_use_buffer",
         "layer0.texture": "Theme - Manzhou/Assets/icon-buffer.png",
         "layer0.opacity": 1.0,
-        "layer0.tint": [0, 0, 0],
+        "layer0.tint": [90, 90, 90],
         "content_margin": [9, 9]
     },
     {
         "class": "icon_use_buffer",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.tint": [34, 130, 246]
+        "layer0.tint": [255, 255, 255]
     },
     // Search wrap button
     {
         "class": "icon_wrap",
         "layer0.texture": "Theme - Manzhou/Assets/icon-wrap.png",
         "layer0.opacity": 1.0,
-        "layer0.tint": [0, 0, 0],
+        "layer0.tint": [90, 90, 90],
         "content_margin": [9, 9]
     },
     {
         "class": "icon_wrap",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.tint": [34, 130, 246]
+        "layer0.tint": [255, 255, 255]
     },
     // Search in selection button
     {
         "class": "icon_in_selection",
         "layer0.texture": "Theme - Manzhou/Assets/icon-selection.png",
         "layer0.opacity": 1.0,
-        "layer0.tint": [0, 0, 0],
+        "layer0.tint": [90, 90, 90],
         "content_margin": [9, 9]
     },
     {
         "class": "icon_in_selection",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.tint": [34, 130, 246]
+        "layer0.tint": [255, 255, 255]
     },
 
 //
@@ -1104,13 +1101,13 @@
         "class": "icon_preserve_case",
         "layer0.texture": "Theme - Manzhou/Assets/icon-preserve.png",
         "layer0.opacity": 1.0,
-        "layer0.tint": [0, 0, 0],
+        "layer0.tint": [90, 90, 90],
         "content_margin": [9, 9]
     },
     {
         "class": "icon_preserve_case",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.tint": [34, 130, 246]
+        "layer0.tint": [255, 255, 255]
     },
 
 //
@@ -1122,13 +1119,22 @@
         "class": "icon_highlight",
         "layer0.texture": "Theme - Manzhou/Assets/icon-highlight.png",
         "layer0.opacity": 1.0,
-        "layer0.tint": [0, 0, 0],
+        "layer0.tint": [90, 90, 90],
         "content_margin": [9, 9]
     },
     {
         "class": "icon_highlight",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.tint": [34, 130, 246]
+        "layer0.tint": [255, 255, 255]
+    },
+
+//
+// WINDOW
+//
+    {
+        "class": "title_bar",
+        "fg": [255, 255, 255, 255],
+        "bg": [39, 43, 52, 255],
     }
 
 ]
